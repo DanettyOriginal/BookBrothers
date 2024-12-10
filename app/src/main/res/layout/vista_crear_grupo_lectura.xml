@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_limpio"
+    tools:ignore="ExtraText">
+
+    <!-- Imagenes de navegación -->
+    <ImageView
+        android:id="@+id/img_notificacionesClubLecturaPrincipal"
+        android:layout_width="75dp"
+        android:layout_height="70dp"
+        android:onClick="goToPaginaNotificacionesCrearGrupo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.648"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975"
+        app:srcCompat="@drawable/icono_notificaciones_home2" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="86dp"
+        android:layout_height="73dp"
+        android:onClick="goToPaginaPerfilCrearGrupo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98"
+        app:srcCompat="@drawable/icono_perfil_home2" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="70dp"
+        android:layout_height="75dp"
+        android:onClick="goToPaginaPrincipalCrearGrupo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.983"
+        app:srcCompat="@drawable/icono_home_home2" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="80dp"
+        android:layout_height="74dp"
+        android:onClick="goToPaginaAmigosCrearGrupo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.924"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98"
+        app:srcCompat="@drawable/icono_amigos_home2" />
+
+    <!-- EditText: Nombre del grupo -->
+    <EditText
+        android:id="@+id/txtNombreGrupo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#BADD50"
+        android:hint="@string/hint_nombre_grupo"
+        android:padding="10dp"
+        android:textColor="#6D8EEA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.307"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <!-- EditText: Libro elegido -->
+    <EditText
+        android:id="@+id/txtLibroElegido"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#BADD50"
+        android:hint="@string/hint_libro_elegido"
+        android:padding="10dp"
+        android:textColor="#6D8EEA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.393"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <!-- RadioGroup: Tipo de grupo -->
+    <RadioGroup
+        android:id="@+id/rgTipoGrupo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.475"
+        app:layout_constraintWidth_percent="0.8">
+
+        <RadioButton
+            android:id="@+id/rbLibre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_libre"
+            android:textColor="#6D8EEA"
+            android:background="#BADD50"
+            android:padding="10dp" />
+
+        <RadioButton
+            android:id="@+id/rbGrupoReducido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/radio_grupo_reducido"
+            android:textColor="#6D8EEA"
+            android:background="#BADD50"
+            android:padding="10dp" />
+    </RadioGroup>
+
+    <!-- Spinner: Número de personas -->
+    <Spinner
+        android:id="@+id/spinnerNumeroPersonas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/opciones_numero_personas"
+        android:background="#BADD50"
+        android:textColor="#6D8EEA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.544"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <!-- Spinner: Límite de tiempo -->
+    <Spinner
+        android:id="@+id/spinnerLimiteTiempo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:entries="@array/opciones_limite_tiempo"
+        android:background="#BADD50"
+        android:textColor="#6D8EEA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <!-- Botón para crear el grupo -->
+    <Button
+        android:id="@+id/btnCrearGrupo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#BADD50"
+        android:text="@string/btn_crear"
+        android:textColor="#282B26"
+        android:textSize="18sp"
+        android:onClick="crearGrupo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.686" />
+
+    <!-- Botón para volver -->
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#BADD50"
+        android:text="@string/btn_volver"
+        android:textColor="#282B26"
+        android:textSize="18sp"
+        android:onClick="volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.868"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.686" />
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="147dp"
+        android:layout_height="140dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.939"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027"
+        app:srcCompat="@drawable/logo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

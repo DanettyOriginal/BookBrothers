@@ -1,0 +1,52 @@
+<resources>
+    <!-- Nombre de la aplicación -->
+    <string name="app_name">BookBrothers</string>
+
+    <!-- Textos utilizados en los campos de texto -->
+    <string name="hint_nombre_grupo">Nombre del grupo</string>
+    <string name="hint_libro_elegido">Libro elegido</string>
+
+    <!-- Opciones para el tipo de grupo -->
+    <string name="radio_libre">Libre</string>
+    <string name="radio_grupo_reducido">Grupo reducido</string>
+
+    <!-- Opciones para el número de personas en el grupo -->
+    <string-array name="opciones_numero_personas">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+
+    <!-- Opciones para el límite de tiempo -->
+    <string-array name="opciones_limite_tiempo">
+        <item>1 semana</item>
+        <item>2 semanas</item>
+        <item>3 semanas</item>
+        <item>1 mes</item>
+        <item>2 meses</item>
+        <item>3 meses</item>
+        <item>4 meses</item>
+        <item>5 meses</item>
+        <item>6 meses</item>
+    </string-array>
+
+    <!-- Botones -->
+    <string name="btn_crear">Crear</string>
+    <string name="btn_volver">Volver</string>
+</resources>

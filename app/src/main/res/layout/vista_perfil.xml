@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/fondo_limpio">
+
+    <ImageView
+        android:id="@+id/img_casa_Comodin"
+        android:layout_width="70dp"
+        android:layout_height="75dp"
+        android:onClick="goToPaginaPrincipalPerfil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.983"
+        app:srcCompat="@drawable/icono_home_home2" />
+
+    <ImageView
+        android:id="@+id/img_perfil_Comodin"
+        android:layout_width="86dp"
+        android:layout_height="73dp"
+        android:onClick="goToPaginaPerfilPerfil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98"
+        app:srcCompat="@drawable/icono_perfil_home2"/>
+
+    <ImageView
+        android:id="@+id/img_notificacionesComodin"
+        android:layout_width="75dp"
+        android:layout_height="70dp"
+        android:onClick="goToPaginaNotificacionesPerfil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.648"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975"
+        app:srcCompat="@drawable/icono_notificaciones_home2" />
+
+    <ImageView
+        android:id="@+id/goToPaginaAmigosPerfil"
+        android:layout_width="80dp"
+        android:layout_height="74dp"
+        android:onClick="goToPaginaAmigosCrearGrupo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.924"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98"
+        app:srcCompat="@drawable/icono_amigos_home2" />
+
+    <Button
+        android:id="@+id/btnCambiarAjustes"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="#6D8EEA"
+        android:padding="10dp"
+        android:text="Cambiar ajustes"
+        android:textColor="#282B26"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.348" />
+
+    <Button
+        android:id="@+id/btnVerTusListas"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="#6D8EEA"
+        android:padding="10dp"
+        android:text="Ver tus listas"
+        android:textColor="#282B26"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.664" />
+
+    <Button
+        android:id="@+id/btnVerTusAmigos"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="#6D8EEA"
+        android:padding="10dp"
+        android:text="Ver tus amigos"
+        android:textColor="#282B26"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.558" />
+
+    <Button
+        android:id="@+id/btnVerTusGruposLectura"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="#6D8EEA"
+        android:padding="10dp"
+        android:text="Ver tus grupos de lectura"
+        android:textColor="#282B26"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.454" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="150dp"
+        android:layout_height="188dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.865"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06"
+        app:srcCompat="@drawable/logo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
